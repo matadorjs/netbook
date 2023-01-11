@@ -43,6 +43,7 @@ header {
   font-weight: 600;
   font-size: 24px;
   margin-right: 72px;
+  cursor: pointer;
 }
 .logo-icon {
   margin-right: 6px;
@@ -387,6 +388,7 @@ ul {
   transform: translateY(-4px);
   background-color: #fff;
   border-color: transparent;
+  transition: 0.3s;
 }
 
 .progress__rating-title {
@@ -704,13 +706,19 @@ ul {
 /*_________________ Get Our Aplication ____________ */
 
 .aplication {
-  display: flex;
-  width: 1440px;
+  /* display: flex; */
   height: 560px;
   overflow: hidden;
   background: #E5F0FD;
-  padding: 98px 0px 0 135px;
+  /* padding: 98px 0px 0 135px; */
+  /* justify-content: space-between; */
+}
+
+.aplication__about {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+
 }
 
 .aplication__main {
@@ -721,6 +729,10 @@ ul {
   display: flex;
   align-items: center;
   
+}
+
+.aplication__additionally {
+  object-fit: cover;
 }
 
 /*_________________ Latest News ____________ */
@@ -774,7 +786,7 @@ ul {
 
 
 .footer {
-  width: 1440px;
+  
   background: #2b2b39;
 }
 
@@ -782,7 +794,8 @@ ul {
 .footer__main {
   display: flex;
   justify-content: space-between;
-  padding: 78px 135px 97px 135px;
+  align-items: center;
+  padding: 78px 0 97px 0;
 }
 
 .footer__additionally {
@@ -817,11 +830,15 @@ ul {
 /* footer__title / footer__text */
 .footer__additionally {
   background: #20202d;
-  display: flex;
   width: 100%;
-  padding: 30px 135px;
+  
+}
+
+.footer__about {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 31px 0;
 }
 
 .footer__additionally-link {
@@ -832,6 +849,7 @@ ul {
   color: #ffffff;
   font-weight: 600;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .footer__additionally-icon {
